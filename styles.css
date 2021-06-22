@@ -1,0 +1,100 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css");
+
+main {
+	width: 30%;
+	min-width: 300px;
+	margin: 2em auto;
+}
+
+form {
+	background-color: lightgray;
+	padding: 1em 2em;
+}
+
+form button {
+	margin: 1em auto;
+}
+
+.form-pair {
+	display: flex;
+	justify-content: space-between;
+	margin:  1em auto;
+}
+.modal-overlay {
+	z-index: 2;
+	position: fixed;
+	background-color: rgba(100,100,100,.3);
+	top: 0;
+	left: 0;
+	height: 100vh;
+	width: 100vw;
+}
+.modal {
+	z-index: 3;
+	display: flex;
+	flex-flow: column;
+	justify-content: space-between;
+	min-width: 30vw;
+	min-height: 30vh;
+	width: 40vh;
+	height: 40vh;
+	border: 1px solid grey;
+	border-radius: 10px;
+	box-shadow: 1px 1px 2px rgba(40,40,40,.7), -1px -1px 2px rgba(40,40,40,.7);
+	padding: 2em;
+	position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.modal-error {
+	background-color: rgb(230,10,30);
+	color: white;
+}
+.modal-success {
+	background-color: rgba(110,255,110);
+	color: black;
+}
+.modal .title {
+	text-transform: uppercase;
+	margin: 0;
+	text-align: center;
+}
+.modal i {
+	padding-right: .2em;
+}
+.modal button {
+	border:  none;
+	text-align: center;
+	width: 40%;
+	align-self: center;
+	padding: 0.5em 1em;
+	transition: .350s ease;
+}
+.modal-error button {
+	background-color: rgba(160,160,160,.7);
+	border-radius: 20px;
+	color: rgba(0,0,0,.7);
+}
+.modal-error button:hover {
+	background-color: rgb(60,180,60);
+	color: white;
+	box-shadow: 1px 1px 4px white, -1px -1px 4px white;
+	width: 50%;
+	border-radius: 10px;
+	font-weight: bold;
+}
+.modal-success button {
+	background-color: rgba(200,200,200,.7);
+	color: rgba(40,250,40,.3);
+	transition: .2s;
+}
+.modal-success button:hover {
+	background-color: rgba(255,255,255,1);
+	color: black;
+	box-shadow: 1px 1px 4px rgb(50,50,80), -1px -1px 4px rgb(50,50,80);
+	padding: 1em;
+	width: 50%;
+	border-radius: 10px;
+	font-weight: bold;
+}
